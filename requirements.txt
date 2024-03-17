@@ -5,5 +5,5 @@ langchain_google_genai
 langchain
 bs4
 sentence-transformers
-chromadb
+chromadb==0.3.29
 
