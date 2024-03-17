@@ -10,7 +10,8 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 import os
 from langchain_community.document_loaders import WebBaseLoader
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDswh7HV9jrP19D5sGJjNwmGQQotuH7Fcs"
+
+GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 llm = ChatGoogleGenerativeAI(model="gemini-pro")
 
 st.title("🤖💬Chat with website data")

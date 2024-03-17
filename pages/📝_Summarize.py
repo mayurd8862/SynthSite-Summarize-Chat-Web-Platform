@@ -9,7 +9,12 @@ from langchain.prompts import PromptTemplate
 from langchain_community.document_loaders import WebBaseLoader
 
 # if "GOOGLE_API_KEY" not in os.environ:
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDswh7HV9jrP19D5sGJjNwmGQQotuH7Fcs"
+# os.environ["GOOGLE_API_KEY"] = "AIzaSyDswh7HV9jrP19D5sGJjNwmGQQotuH7Fcs"
+GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
+
+header ={
+    'GOOGLE_API_KEY' : st.secrets["GOOGLE_API_KEY"]
+}
 
 llm = ChatGoogleGenerativeAI(model="gemini-pro")
 
