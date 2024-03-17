@@ -4,3 +4,4 @@ streamlit_chat
 langchain_google_genai
 langchain
 bs4
+sentence-transformers
