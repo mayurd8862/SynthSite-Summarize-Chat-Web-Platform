@@ -13,6 +13,7 @@ from langchain_community.document_loaders import WebBaseLoader
 
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 llm = ChatGoogleGenerativeAI(model="gemini-pro")
+os.environ["GOOGLE_API_KEY"] == st.secrets["GOOGLE_API_KEY"]
 
 st.title("🤖💬Chat with website data")
 
