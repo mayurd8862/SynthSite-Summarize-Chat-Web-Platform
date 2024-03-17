@@ -1,7 +1,6 @@
 
 from langchain_community.chat_models import ChatOpenAI
 import streamlit as st
-import openai
 from streamlit_chat import message
 from langchain_community.document_loaders import YoutubeLoader
 from langchain_google_genai import ChatGoogleGenerativeAI
